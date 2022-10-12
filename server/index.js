@@ -1,11 +1,11 @@
 // server/index.js
-const express = require('express');
+const express = require("express");
 
 const port = 3200;
 
 const app = express();
 
-app.get('/test', (req, res) => {
+app.get("/test", (req, res) => {
   res.send({ data: "Server says hi!" });
 });
 
