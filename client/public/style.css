@@ -1,0 +1,167 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  background-color: #EFEEEE;
+  ;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.menu-bar{
+  overflow: hidden;
+  background-color: #28B48A;
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu-bar-logo{
+height: 5rem;
+align-self: flex-start;
+}
+
+.menu-bar-item1, .menu-bar-item2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  
+}
+.menu-bar-settings{
+ text-transform: uppercase;
+ font-size: 1rem;
+ color: white;
+ margin: 0.8rem;
+}
+
+/* make sticky in JS */
+.main-block{
+  position: relative;
+  top: 5rem;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* background-color: cornflowerblue; */
+}
+
+.split1 {
+  flex: 1;
+  background-color: #EFEEEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+.split2{
+flex: 1;
+background-color: #EFEEEE;
+;
+}
+
+.card{
+  background-color: #28B48A;
+  /* border-radius: 10px; */
+  height: 250px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.debit, .credit{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: violet; */
+  margin: 1rem auto 1rem auto;
+
+}
+
+
+.account{
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem;
+  padding: 1rem;
+  /* border-radius: 10px; */
+}
+
+.account-main{
+  width: 100%;
+  height: 5rem;
+  background-color: white;
+  /* margin: auto 0.5rem auto 0.5rem auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.account-other{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.805);
+  height: 1.5rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+.details{
+  padding: 1rem;
+
+  /* background-color: thistle; */
+}
+span.cost{
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+}
+.acc-type{
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 0.6;
+}
+
+
+.acc-num{
+  font-weight: 500 ;
+  font-size: 1rem;
+  line-height: 0.6;
+}
+span{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+span.arrow{
+  color: white;
+margin-right: 1rem;
+}
+
+div.total{
+  height: 8rem;
+  background-color: rgba(0, 0, 0, 0.80);
+  width: 100%;
+  color: white
+  /* border-radius: 10px; */
+}
+
+.split2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

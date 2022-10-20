@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -24,11 +26,11 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Waterloo Imperial Bank</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +41,72 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <div class="menu-bar">
+    <img src="logo.png" alt="" id="menu-bar-logo"> 
+
+    <h2 class="menu-bar-item1"> Transaction</h2>
+    <h2 class="menu-bar-item2"> Interac</h2>
+    <h2 class="menu-bar-settings"> Edit profile</h2>
+    </div>
+    <div class="main-block">
+      <div class="split1">
+
+        <div class="card"></div>
+
+        <div class="debit">
+          <div class="heading"> <span>DEBIT</span></div>
+          <div id="cheq" class="account">
+            <div class="account-main">
+              <div class="details">
+                <p class="acc-type">Chequing</p>
+                <p class="acc-num">1234578</p>
+              </div>
+              <span class="cost">$5,600</span>
+            </div>
+            <div class="account-other">
+             <span class="arrow">&#8594;</span>
+            </div>
+          </div>
+          <div class="account save">
+            <div class="account-main">
+              <div class="details">
+                <p class="acc-type">Savings</p>
+                <p class="acc-num">1234578</p>
+              </div>
+              <span class="cost">$23,600</span>
+            </div>
+            <div class="account-other">
+              <span class="arrow">&#8594;</span>
+          </div>
+          </div>
+          <div class="total account">
+            <div class="heading"> <span class="total">Total</span> </div>
+            <span class="cost">$23,600</span>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="credit">
+          <div class="heading"> <span>CREDIT</span> </div>
+          <div class="account">
+            <div class="account-main">
+              <div class="details">
+                <p class="acc-type">Credit</p>
+                <p class="acc-num">1234578</p>
+              </div>
+              <span class="cost">$5,600</span>
+            </div>
+            <div class="account-other">
+              <span class="arrow">&#8594;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="split2">
+        <p>Raw Data</p>
+      </div>
+    </div>
+
   </body>
 </html>
