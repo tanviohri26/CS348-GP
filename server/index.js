@@ -23,6 +23,7 @@ const AccountRouter = require('./routes/accounts');
 
 app.use('/users', UserRouter);
 app.use('/accounts', AccountRouter);
+
 // app.use('./transactions', TransactionRouter);
 
 app.listen(port, () => {
