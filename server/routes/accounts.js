@@ -1,5 +1,6 @@
 const router = require('express').Router();
 let Account = require('../models/Account');
+var mongoose = require('mongoose');
 
 router.route('/').get((req, res) => {
     Account.where({userID: req.params.userId})
@@ -8,11 +9,11 @@ router.route('/').get((req, res) => {
     });
 
 router.route('/add').post((req, res) => {
-    const userID = req.params.userId;
+    const UserID = mongoose.Types.ObjectId.createFromHexString(req.body.UserID);
     const type = req.body.type;
     const balance = req.body.balance;
     
-    const newAccount = new Account({userID, balance, type});
+    const newAccount = new Account({UserID, balance, type});
   
     newAccount.save()
       .then(() => res.json('Account added!'))
