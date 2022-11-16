@@ -12,6 +12,7 @@ This application aims simulate a bank. I will provide a comprehensive summary of
 
 - Install the yarn package manager (installation instructions can be found [here](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable])).
 
+### Remove the postgreSQL documenatation and add mongodb docs
 - Install PostgreSQL on the platform you are using for testing. Instructions can be found [here](https://www.postgresql.org/download/)).
 
 - Make sure you can use the psql command in your shell.
