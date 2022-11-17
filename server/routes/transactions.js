@@ -3,7 +3,7 @@ let Transaction = require('../models/Transaction');
 var mongoose = require('mongoose');
 
 router.route('/').get((req, res) => {
-    Transaction.where({SenderID: req.params.SenderID})
+    Transaction.where()
     .then(transactions => res.json(transactions))
     .catch(err => res.status(400).json('Error: ' + err));
     });
