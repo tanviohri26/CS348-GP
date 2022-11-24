@@ -66,3 +66,4 @@ This application aims simulate a bank. I will provide a comprehensive summary of
 
 - References for mock-up frontend - MDN, https://reactjs.org/docs/getting-started.html
 - References for setting up sequelize ORM - https://dev.to/nedsoft/getting-started-with-sequelize-and-postgres-emp
+- References for uploading data into MongoDB - https://www.mongodb.com/docs/guides/crud/insert/
