@@ -25,23 +25,6 @@ router.route('/:id').delete((req, res) => {
         .catch(err => res.status(400).json('Error: ' + err));
     });
 
-// router.route('/add').post((req, res) => {
-//     const username = req.body.username;
-//     const password = req.body.password;
-//     const firstName = req.body.firstName;
-//     const lastName = req.body.lastName;
-//     const mobileNo = req.body.mobileNo;
-//     const EmailID = req.body.EmailID;
-//     const Address = req.body.Address;
-//     const Admin = req.body.Admin;
-    
-//     const newUser = new User({username, password, firstName, lastName, mobileNo, EmailID, Address, Admin});
-  
-//     newUser.save()
-//       .then(() => res.json('User added!'))
-//       .catch(err => res.status(400).json('Error: ' + err));
-//     });
-
 // Add User Route
 router.route('/add').post(async(req, res) => {
   const hashedPass = await bcrypt.hash(req.body.password, 10);
