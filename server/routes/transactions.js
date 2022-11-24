@@ -3,14 +3,14 @@ let Transaction = require('../models/Transaction');
 var mongoose = require('mongoose');
 
 router.route('/').get((req, res) => {
-    Transaction.where({SenderID: req.params.SenderID})
+    Transaction.where()
     .then(transactions => res.json(transactions))
     .catch(err => res.status(400).json('Error: ' + err));
     });
 
 router.route('/add').post((req, res) => {
     const SenderID = mongoose.Types.ObjectId.createFromHexString(req.body.SenderID);
-    const ReceiverID = mongoose.Types.ObjectId.createFromHexString(req.body.SenderID);
+    const ReceiverID = mongoose.Types.ObjectId.createFromHexString(req.body.ReceiverID);
     const Amount = req.body.Amount;
     
     const newTransaction = new Transaction({SenderID, ReceiverID, Amount});
